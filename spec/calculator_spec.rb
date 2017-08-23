@@ -18,17 +18,12 @@ describe Calculator do
       it 'given two numbers -1,-3 return 4' do
         expect(Calculator.add(-1,-3)).to eq(4)
       end
-      it 'given two numbers 10.58,11 return 20.58' do
-        expect(Calculator.add(10.58.to_f,11)).to eq(20.58)
-      end
       # Review context include more scenarios for tests
     end
     context 'all expected failure test cases' do
       it 'given string:bob and int:0 input expect exception of type ArgumentError' do
         expect(Calculator.add('bob',0)).to raise_error(ArgumentError)
       end
-     # it 'given float:123.689 and int:0 input expect exception of type ArgumentError' do
-      #  expect(Calculator.add('123.689',0)).to raise_error(ArgumentError)
       end
     end
   # Review context include more scenarios for failing tests

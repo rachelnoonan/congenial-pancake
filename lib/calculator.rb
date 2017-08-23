@@ -3,6 +3,7 @@ require 'pry'
 class Calculator
 
   def self.add(input1, input2)
+    # add some custom exception if passing null, or empty value?
     if input1.is_a?(Integer) && input2.is_a?(Integer)
     input1 + input2
     else
