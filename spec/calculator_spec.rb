@@ -24,8 +24,16 @@ describe Calculator do
       it 'given string:bob and int:0 input expect exception of type ArgumentError' do
         expect(Calculator.add('bob',0)).to raise_error(ArgumentError)
       end
+      it 'given two floats without .tof 10.58,11 input expect exception of type ArgumentError' do
+        expect(Calculator.add(10.58,11)).to raise_error(ArgumentError)
+      end
+      it 'given '' and int:20 input expect exception of type ArgumentError' do
+        expect(Calculator.add('',20)).to raise_error(ArgumentError)
+      end
+      it 'given null and int:20 input expect exception of type ArgumentError' do
+        expect(Calculator.add(null,20)).to raise_error(ArgumentError)
+      end
       end
     end
   # Review context include more scenarios for failing tests
   end
-end
