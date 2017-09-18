@@ -18,11 +18,3 @@
 #Style/GuardClause:
 #  Exclude:
 #    - 'lib/calculator.rb'
-#
-## Offense count: 1
-## Cop supports --auto-correct.
-## Configuration parameters: EnforcedStyle, SupportedStyles.
-## SupportedStyles: final_newline, final_blank_line
-#Style/TrailingBlankLines:
-#  Exclude:
-#    - 'lib/calculator.rb'
