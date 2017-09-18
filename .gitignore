@@ -1,5 +1,4 @@
 .idea/
 .DS_Store
 .bundle
-.rubocop_todo.yml
 examples.txt
